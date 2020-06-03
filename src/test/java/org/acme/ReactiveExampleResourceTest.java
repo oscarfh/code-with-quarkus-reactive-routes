@@ -5,12 +5,11 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.CoreMatchers.is;
 
 @QuarkusTest
-public class ExampleResourceTest {
+public class ReactiveExampleResourceTest {
 
-    private final String PATH = "/hello";
+    private final String PATH = "/reactive-hello";
 
     @Test
     public void testHelloEndpoint() {
